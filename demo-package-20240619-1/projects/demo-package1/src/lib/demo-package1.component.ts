@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-DemoPackage1',
@@ -6,11 +6,11 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <p>
-      demo-package1 works! by Rahul
+      demo-package1 works! by {{name || 'Rahul'}}
     </p>
   `,
   styles: ``
 })
 export class DemoPackage1Component {
-
+  @Input() name!: string;
 }

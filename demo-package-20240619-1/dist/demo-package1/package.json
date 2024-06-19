@@ -1,6 +1,6 @@
 {
   "name": "@rshaw2/demo-package1",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Just a demo project to test and understand how everything works in a package at npmjs",
   "author": "Rahul Kumar Shaw",
   "repository": {

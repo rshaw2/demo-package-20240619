@@ -1,5 +1,5 @@
 import * as i0 from '@angular/core';
-import { Injectable, Component } from '@angular/core';
+import { Injectable, Component, Input } from '@angular/core';
 
 class DemoPackage1Service {
     constructor() { }
@@ -15,9 +15,9 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.0.3", ngImpor
 
 class DemoPackage1Component {
     static { this.ɵfac = i0.ɵɵngDeclareFactory({ minVersion: "12.0.0", version: "18.0.3", ngImport: i0, type: DemoPackage1Component, deps: [], target: i0.ɵɵFactoryTarget.Component }); }
-    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "18.0.3", type: DemoPackage1Component, isStandalone: true, selector: "lib-DemoPackage1", ngImport: i0, template: `
+    static { this.ɵcmp = i0.ɵɵngDeclareComponent({ minVersion: "14.0.0", version: "18.0.3", type: DemoPackage1Component, isStandalone: true, selector: "lib-DemoPackage1", inputs: { name: "name" }, ngImport: i0, template: `
     <p>
-      demo-package1 works! by Rahul
+      demo-package1 works! by {{name || 'Rahul'}}
     </p>
   `, isInline: true, styles: [""] }); }
 }
@@ -25,10 +25,12 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.0.3", ngImpor
             type: Component,
             args: [{ selector: 'lib-DemoPackage1', standalone: true, imports: [], template: `
     <p>
-      demo-package1 works! by Rahul
+      demo-package1 works! by {{name || 'Rahul'}}
     </p>
   ` }]
-        }] });
+        }], propDecorators: { name: [{
+                type: Input
+            }] } });
 
 /*
  * Public API Surface of demo-package1
