@@ -41,4 +41,4 @@ i0.ɵɵngDeclareClassMetadata({ minVersion: "12.0.0", version: "18.0.3", ngImpor
  */
 
 export { DemoPackage1Component, DemoPackage1Service };
-//# sourceMappingURL=demo-package1.mjs.map
+//# sourceMappingURL=rshaw2-demo-package1.mjs.map

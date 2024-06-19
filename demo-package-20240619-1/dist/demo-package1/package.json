@@ -1,6 +1,6 @@
 {
   "name": "@rshaw2/demo-package1",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Just a demo project to test and understand how everything works in a package at npmjs",
   "author": "Rahul Kumar Shaw",
   "repository": {
@@ -20,7 +20,7 @@
     "tslib": "^2.3.0"
   },
   "sideEffects": false,
-  "module": "fesm2022/demo-package1.mjs",
+  "module": "fesm2022/rshaw2-demo-package1.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -28,9 +28,9 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2022": "./esm2022/demo-package1.mjs",
-      "esm": "./esm2022/demo-package1.mjs",
-      "default": "./fesm2022/demo-package1.mjs"
+      "esm2022": "./esm2022/rshaw2-demo-package1.mjs",
+      "esm": "./esm2022/rshaw2-demo-package1.mjs",
+      "default": "./fesm2022/rshaw2-demo-package1.mjs"
     }
   }
 }
