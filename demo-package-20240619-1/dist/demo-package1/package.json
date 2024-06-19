@@ -1,0 +1,36 @@
+{
+  "name": "@rshaw2/demo-package1",
+  "version": "0.0.1",
+  "description": "Just a demo project to test and understand how everything works in a package at npmjs",
+  "author": "Rahul Kumar Shaw",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rshaw2/demo-package-20240619.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rshaw2/demo-package-20240619/issues"
+  },
+  "homepage": "https://github.com/rshaw2/demo-package-20240619",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^18.0.0",
+    "@angular/core": "^18.0.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2022/demo-package1.mjs",
+  "typings": "index.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./index.d.ts",
+      "esm2022": "./esm2022/demo-package1.mjs",
+      "esm": "./esm2022/demo-package1.mjs",
+      "default": "./fesm2022/demo-package1.mjs"
+    }
+  }
+}

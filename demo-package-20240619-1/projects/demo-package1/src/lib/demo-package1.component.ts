@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <p>
-      demo-package1 works!
+      demo-package1 works! by Rahul
     </p>
   `,
   styles: ``
